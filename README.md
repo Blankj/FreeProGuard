@@ -61,7 +61,9 @@
 如果该库能为你节省 10 分钟甚至更多的时间，请把它分享给他人来帮助更多的开发者们节省时间，这些时间可以多陪伴家人、多运动、多做自己喜欢的事情，希望开源可以帮助到更多的人，也希望更多的人加入到开源中来。
 
 
-## ChangeLog
+## [ChangeLog](https://github.com/Blankj/FreeProGuard/blob/master/ChangeLog)
+
+
 
 [logo]: https://raw.githubusercontent.com/Blankj/FreeProGuard/master/art/logo.png
 
