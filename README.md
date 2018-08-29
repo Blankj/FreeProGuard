@@ -1,6 +1,6 @@
 ![logo][logo]
 
-[![fpg][fpgsvg]][fpg][![License][licensesvg]][license]
+[![fpg][fpgsvg]][fpg] [![License][licensesvg]][license]
 
 
 ## About
@@ -41,18 +41,27 @@
 
 ## How to use
 
-1. 添加依赖：
+1. 首先开启混淆，设置 `minifyEnabled true`；
+2. 添加依赖：
     ```groovy
     implementation 'com.blankj:free-proguard:0.0.1'
     ```
-2. 把项目中的实体类加入 `proguard-rules.pro` 文件中，一般为 `-keep class urpackage.xx.bean/entity/model.** { *; }`，或者使用 `@Keep` 注解这些实体类；
-3. 把项目中用到的一些不包括在如上列表中的三方库配置到 `proguard-rules.pro` 文件中，或者[提 issue](https://github.com/Blankj/FreeProGuard/issues/new) 使其加入到本库中来。
+3. 把项目中的实体类加入 `proguard-rules.pro` 文件中，一般为 `-keep class urpackage.xx.bean/entity/model.** { *; }`，或者使用 `@Keep` 注解这些实体类；
+4. 把项目中用到的一些不包括在如上列表中的三方库配置到 `proguard-rules.pro` 文件中，或者[提 issue](https://github.com/Blankj/FreeProGuard/issues/new) 使其加入到本库中来。
+
+
+## Profit
+
+1. 开启混淆会将代码中的所有变量、函数、类的名称变为简短的英文字母代号（也可自定义），在缺乏相应的函数名和程序注释的况下，即使被反编译，也将难以阅读，提升应用的安全性；
+2. 混淆通过分析字节码，去掉冗余代码，再加上缩短了变量、函数、类的名称，可以进一步缩减应用大小，如果想混淆资源文件，可以使用微信的 [AndResGuard](https://github.com/shwenzhang/AndResGuard)。
 
 
 ## Last but not least
 
 如果该库能为你节省 10 分钟甚至更多的时间，请把它分享给他人来帮助更多的开发者们节省时间，这些时间可以多陪伴家人、多运动、多做自己喜欢的事情，希望开源可以帮助到更多的人，也希望更多的人加入到开源中来。
 
+
+## ChangeLog
 
 [logo]: https://raw.githubusercontent.com/Blankj/FreeProGuard/master/art/logo.png
 
