@@ -1,0 +1,30 @@
+plugins {
+    id "com.android.library"
+    id "com.github.dcendents.android-maven" version "2.1"
+    id "com.jfrog.bintray" version "1.8.0"
+}
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 14
+        versionCode 1
+        versionName "0.0.1"
+    }
+
+    buildTypes {
+        release {
+            consumerProguardFiles file('.').listFiles(new FilenameFilter() {
+                @Override
+                boolean accept(File file, String s) {
+                    return s.endsWith('.pro')
+                }
+            })
+        }
+    }
+}
+
+apply from: "bintrayUpload.gradle"
+
+//./gradlew bintrayUpload
