@@ -1,6 +1,6 @@
 # https://github.com/alibaba/ARouter
--keep public class com.alibaba.android.arouter.routes.**{*;}
--keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
+-keep public class com.alibaba.android.arouter.routes.** { *; }
+-keep class * implements com.alibaba.android.arouter.facade.template.ISyringe { *; }
 
 # If you use the byType method to obtain Service, add the following rules to protect the interface:
 -keep interface * implements com.alibaba.android.arouter.facade.template.IProvider

@@ -9,7 +9,9 @@
 
 * [AndroidCommon][AndroidCommon]
 * [AliPay][AliPay]（需防混 jar(-libraryjars libs/alipaySDK-20150602.jar)）
+* [AndFix][AndFix]
 * [AndroidEventBus][AndroidEventBus]
+* [AndroidUniversalImageLoader][AndroidUniversalImageLoader]
 * [ARouter][ARouter]
 * [BaiduMap][BaiduMap]（需防混 jar(-libraryjars libs/baidumapapi_v2_1_2.jar)）
 * [BaseRecyclerViewAdapterHelper][BaseRecyclerViewAdapterHelper]
@@ -24,20 +26,31 @@
 * [Glide][Glide]
 * [GreenDAO][GreenDAO]
 * [Gson][Gson]
+* [Ijkplayer][Ijkplayer]
 * [Guava][Guava]
 * [Jackson][Jackson]
 * [JPush][JPush]
 * [LitePal][LitePal]
+* [Mars][Mars]
 * [MiPush][MiPush]
+* [Nuwa][Nuwa]
 * [OkHttp][OkHttp]
+* [PingPlusPlus][PingPlusPlus]
 * [Realm][Realm]
 * [Retrofit][Retrofit]
 * [Retrolambda][Retrolambda]
 * [RongCloud][RongCloud]
 * [RxJava][RxJava]
+* [ShareSDK][ShareSDK]
+* [SinaWeiboSDK][SinaWeiboSDK]
 * [Stetho][Stetho]
 * [Tencent][Tencent]
 * [UMeng][UMeng]
+* [UnionPay][UnionPay]
+* [Volley][Volley]
+* [XinGe][XinGe]
+* [XunFei][XunFei]
+* [ZXing][ZXing]
 
 
 ## How to use
@@ -45,7 +58,7 @@
 1. 首先开启混淆，设置 `minifyEnabled true`；
 2. 添加依赖：
     ```groovy
-    implementation "com.blankj:free-proguard:0.0.5"
+    implementation "com.blankj:free-proguard:0.0.6"
     ```
 3. 把项目中的实体类加入到 `proguard-rules.pro` 文件中，一般为 `-keep class urpackage.xx.bean/entity/model.** { *; }`，或者使用 `@Keep` 注解这些实体类；
 4. 把项目中需要防混淆的 jar 加入到 `proguard-rules.pro` 文件中，比如支付宝 SDK 的 `-libraryjars libs/alipaySDK-20150602.jar`，如果要对所有 jar 都防混，那么使用 `-libraryjars libs` 即可；
@@ -69,7 +82,7 @@
 
 [logo]: https://raw.githubusercontent.com/Blankj/FreeProGuard/master/art/logo.png
 
-[fpgsvg]: https://img.shields.io/badge/FreeProGuard-v0.0.5-brightgreen.svg
+[fpgsvg]: https://img.shields.io/badge/FreeProGuard-v0.0.6-brightgreen.svg
 [fpg]: https://github.com/Blankj/FreeProGuard
 
 [licensesvg]: https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg
@@ -79,7 +92,9 @@
 
 [AndroidCommon]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AndroidCommon.pro
 [AliPay]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AliPay.pro
+[AndFix]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AndFix.pro
 [AndroidEventBus]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AndroidEventBus.pro
+[AndroidUniversalImageLoader]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AndroidUniversalImageLoader.pro
 [ARouter]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AndroidEventBus.pro
 [BaiduMap]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-BaiduMap.pro
 [BaseRecyclerViewAdapterHelper]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-BaseRecyclerViewAdapterHelper.pro
@@ -95,16 +110,27 @@
 [GreenDAO]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-GreenDAO.pro
 [Gson]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Gson.pro
 [Guava]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Guava.pro
+[Ijkplayer]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Ijkplayer.pro
 [Jackson]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Jackson.pro
 [JPush]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-JPush.pro
 [LitePal]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-LitePal.pro
+[Mars]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Mars.pro
 [MiPush]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-MiPush.pro
+[Nuwa]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Nuwa.pro
 [OkHttp]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-OkHttp.pro
+[PingPlusPlus]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-PingPlusPlus.pro
 [Realm]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Realm.pro
 [Retrofit]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Retrofit.pro
 [Retrolambda]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Retrolambda.pro
 [RongCloud]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-RongCloud.pro
 [RxJava]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-RxJava.pro
+[ShareSDK]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-ShareSDK.pro
+[SinaWeiboSDK]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-SinaWeiboSDK.pro
 [Stetho]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Stetho.pro
 [Tencent]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Tencent.pro
 [UMeng]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-UMeng.pro
+[UnionPay]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-UnionPay.pro
+[Volley]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Volley.pro
+[XinGe]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-XinGe.pro
+[XunFei]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-XunFei.pro
+[ZXing]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-ZXing.pro

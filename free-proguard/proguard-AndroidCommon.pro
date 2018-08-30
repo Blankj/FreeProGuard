@@ -151,6 +151,13 @@
     public void *(android.webkit.webView, jav.lang.String);
 }
 
+# js
+-keepattributes JavascriptInterface
+-keep class android.webkit.JavascriptInterface { *; }
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
 # @Keep
 -keep,allowobfuscation @interface android.support.annotation.Keep
 -keep @android.support.annotation.Keep class *
