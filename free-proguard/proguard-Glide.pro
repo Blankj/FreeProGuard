@@ -6,7 +6,7 @@
 }
 
 # for DexGuard only
--keepresourcexmlelements manifest/application/meta-data@value=GlideModule
+#-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
 
 # https://github.com/bumptech/glide/blob/master/library/proguard-rules.txt
 -keep public class * extends com.bumptech.glide.module.AppGlideModule
