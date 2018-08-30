@@ -10,6 +10,7 @@
 * [AndroidCommon][AndroidCommon]
 * [AliPay][AliPay]（需防混 jar(-libraryjars libs/alipaySDK-20150602.jar)）
 * [AndroidEventBus][AndroidEventBus]
+* [ARouter][ARouter]
 * [BaiduMap][BaiduMap]（需防混 jar(-libraryjars libs/baidumapapi_v2_1_2.jar)）
 * [BaseRecyclerViewAdapterHelper][BaseRecyclerViewAdapterHelper]
 * [Bugly][Bugly]
@@ -79,6 +80,7 @@
 [AndroidCommon]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AndroidCommon.pro
 [AliPay]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AliPay.pro
 [AndroidEventBus]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AndroidEventBus.pro
+[ARouter]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-AndroidEventBus.pro
 [BaiduMap]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-BaiduMap.pro
 [BaseRecyclerViewAdapterHelper]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-BaseRecyclerViewAdapterHelper.pro
 [Bugly]: https://github.com/Blankj/FreeProGuard/blob/master/free-proguard/proguard-Bugly.pro
