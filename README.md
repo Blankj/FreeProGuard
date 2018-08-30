@@ -8,9 +8,9 @@
 **[FreeProGuard][readme]** 为方便广大 Android 开发者们今后防混淆配置，很久之前便有打算做这个免混淆库了，只是拖到最近才有空来实现该库，该库利用了 `consumerProguardFiles` 来传递 aar 中的防混淆配置到主工程中，所以依赖了该库后常用的主流三方库便不再需要开发者们手动配置了，当然，有些友善的库已采用了该方式，我也希望更多的开源库使用该方式从而省去开发者配置防混淆，本库已配置了如下防混淆文件（包括库的不同版本）：
 
 * [AndroidCommon][AndroidCommon]
-* [AliPay][AliPay]（需防混 jar）
+* [AliPay][AliPay]（需防混 jar(-libraryjars libs/alipaySDK-20150602.jar)）
 * [AndroidEventBus][AndroidEventBus]
-* [BaiduMap][BaiduMap]
+* [BaiduMap][BaiduMap]（需防混 jar(-libraryjars libs/baidumapapi_v2_1_2.jar)）
 * [BaseRecyclerViewAdapterHelper][BaseRecyclerViewAdapterHelper]
 * [Bugly][Bugly]
 * [ButterKnife][ButterKnife]
@@ -47,7 +47,7 @@
     implementation "com.blankj:free-proguard:0.0.5"
     ```
 3. 把项目中的实体类加入到 `proguard-rules.pro` 文件中，一般为 `-keep class urpackage.xx.bean/entity/model.** { *; }`，或者使用 `@Keep` 注解这些实体类；
-4. 把项目中需要防混淆的 jar 加入到 `proguard-rules.pro` 文件中，比如支付宝 SDK 的 `-libraryjars libs/alipaySDK-20150602.jar`；
+4. 把项目中需要防混淆的 jar 加入到 `proguard-rules.pro` 文件中，比如支付宝 SDK 的 `-libraryjars libs/alipaySDK-20150602.jar`，如果要对所有 jar 都防混，那么使用 `-libraryjars libs` 即可；
 5. 把项目中用到的一些不包括在如上列表中的三方库配置到 `proguard-rules.pro` 文件中，或者[提 issue](https://github.com/Blankj/FreeProGuard/issues/new) 使其加入到本库中来（小众或者冷门的不予合入哦）。
 
 
