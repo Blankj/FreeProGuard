@@ -1,6 +1,6 @@
 # https://docs.jiguang.cn/jpush/client/Android/android_guide/
--dontoptimize
--dontpreverify
+#-dontoptimize
+#-dontpreverify
 
 -dontwarn cn.jpush.**
 -keep class cn.jpush.** { *; }

@@ -40,8 +40,8 @@
 }
 
 # https://developer.umeng.com/docs/66632/detail/66639
--dontshrink
--dontoptimize
+#-dontshrink
+#-dontoptimize
 -dontwarn com.google.android.maps.**
 -dontwarn android.webkit.WebView
 -dontwarn com.umeng.**

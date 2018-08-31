@@ -58,7 +58,7 @@
 1. 首先开启混淆，设置 `minifyEnabled true`；
 2. 添加依赖：
     ```groovy
-    implementation "com.blankj:free-proguard:0.0.6"
+    implementation "com.blankj:free-proguard:0.0.7"
     ```
 3. 把项目中的实体类加入到 `proguard-rules.pro` 文件中，一般为 `-keep class urpackage.xx.bean/entity/model.** { *; }`，或者使用 `@Keep` 注解这些实体类；
 4. 把项目中需要防混淆的 jar 加入到 `proguard-rules.pro` 文件中，比如支付宝 SDK 的 `-libraryjars libs/alipaySDK-20150602.jar`，如果要对所有 jar 都防混，那么使用 `-libraryjars libs` 即可；
@@ -82,7 +82,7 @@
 
 [logo]: https://raw.githubusercontent.com/Blankj/FreeProGuard/master/art/logo.png
 
-[fpgsvg]: https://img.shields.io/badge/FreeProGuard-v0.0.6-brightgreen.svg
+[fpgsvg]: https://img.shields.io/badge/FreeProGuard-v0.0.7-brightgreen.svg
 [fpg]: https://github.com/Blankj/FreeProGuard
 
 [licensesvg]: https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg

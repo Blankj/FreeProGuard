@@ -1,7 +1,7 @@
 # Source: http://greendao-orm.com/documentation/technical-faq
 ### greenDAO 3
 -keepclassmembers class * extends org.greenrobot.greendao.AbstractDao {
-public static java.lang.String TABLENAME;
+    public static java.lang.String TABLENAME;
 }
 -keep class **$Properties
 
@@ -12,6 +12,6 @@ public static java.lang.String TABLENAME;
 
 ### greenDAO 2
 -keepclassmembers class * extends de.greenrobot.dao.AbstractDao {
-public static java.lang.String TABLENAME;
+    public static java.lang.String TABLENAME;
 }
 -keep class **$Properties
