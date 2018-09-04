@@ -24,3 +24,9 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    versionCode = 1_009_000
+    versionName = '1.9.0'
+    //./gradlew bintrayUpload
+}

@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         minSdkVersion 14
-        versionCode 7
-        versionName "0.0.7"
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
     }
 
     buildTypes {
@@ -26,5 +26,3 @@ android {
 }
 
 apply from: "bintrayUpload.gradle"
-
-//./gradlew bintrayUpload
