@@ -26,7 +26,7 @@ task clean(type: Delete) {
 }
 
 ext {
-    versionCode = 1_009_000
-    versionName = '1.9.0'
+    versionCode = 8
+    versionName = '0.0.8'
     //./gradlew bintrayUpload
 }
