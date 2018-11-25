@@ -23,6 +23,11 @@ android {
             })
         }
     }
+
+    afterEvaluate {
+        generateReleaseBuildConfig.enabled = false
+        generateDebugBuildConfig.enabled = false
+    }
 }
 
 apply from: "bintrayUpload.gradle"

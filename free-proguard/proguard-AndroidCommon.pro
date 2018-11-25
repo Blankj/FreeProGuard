@@ -126,7 +126,7 @@
     public boolean *(android.webkit.WebView, java.lang.String);
 }
 -keepclassmembers class * extends android.webkit.webViewClient {
-    public void *(android.webkit.webView, jav.lang.String);
+    public void *(android.webkit.webView, java.lang.String);
 }
 
 # js
