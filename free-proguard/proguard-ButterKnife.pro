@@ -3,8 +3,3 @@
 -keep class butterknife.*
 -keepclasseswithmembernames class * { @butterknife.* <methods>; }
 -keepclasseswithmembernames class * { @butterknife.* <fields>; }
-
--dontwarn butterknife.internal.**
--keep class **$$ViewInjector { *; }
--keep class **$$ViewBinder { *; }
--keepnames class * { @butterknife.InjectView *;}
