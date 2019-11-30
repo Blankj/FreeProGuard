@@ -1,3 +1,4 @@
+* `19/11/30` 跟新 GreenDao 和 Push 混淆，发布 1.0.2
 * `19/05/15` 修复 `-keep class * implements java.lang.annotation.Annotation`，发布 1.0.1
 * `19/03/26` 修复未混淆类名的问题，发布 1.0.0
 * `19/03/08` 去除中文，适配 androidx，发布 0.0.12
